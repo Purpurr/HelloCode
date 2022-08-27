@@ -40,15 +40,29 @@ int year = Method3();
 
 //Вид4: Методы, которые что-то принимают и что-то возвращают.
 
-string Method4(int count, string c)
-{
-    int i = 0;
-    string result = String.Empty;
+//string Method4(int count, string c)
+//{
+//    int i = 0;
+//    string result = String.Empty;
 
-    while (i < count)
+//    while (i < count)
+//    {
+//        result = result + c;
+//        i++;
+//    }
+//    return result;
+//}
+//string res = Method4(10, "z");
+//Console.WriteLine(res);
+
+//или же через for
+
+string Method4(int count, string text)
+{
+    string result = String.Empty;
+    for (int i = 0; i < count; i++)
     {
-        result = result + c;
-        i++;
+        result = result + text;
     }
     return result;
 }
